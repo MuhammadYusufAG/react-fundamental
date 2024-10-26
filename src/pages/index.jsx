@@ -10,7 +10,7 @@ function Homepage(){
     const onSearchChange = (value) =>{
         const filteredPosts = postsData.filter(item => item.title.includes(value));
         setPosts(filteredPosts);
-        setTotalPosts(totalPosts.length)
+        setTotalPosts(filteredPosts.length)
     };
     return(
         <>
