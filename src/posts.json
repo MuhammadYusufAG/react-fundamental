@@ -2,17 +2,20 @@
     {
         "title" : "tutorial react js lengkap",
         "tags": ["react","frontend"],
-        "date":"2023-10-23"
+        "date":"2023-10-23",
+        "isNew" : true
     },
     {
         "title" : "meningkatkan performa di react js",
         "tags": ["react","frontend"],
-        "date":"2023-10-24"
+        "date":"2023-10-24",
+        "isNew" : false
     },
     {
         "title" : "Cara menggunakan cakra ui di react js",
         "tags": ["react","css"],
-        "date":"2023-10-25"
+        "date":"2023-10-25",
+        "isNew" : false
     }
 
 ]
