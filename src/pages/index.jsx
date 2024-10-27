@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Article from "../components/Article";
 import postsData from "../posts.json";
 import Search from "../components/Search";
@@ -12,6 +12,20 @@ function Homepage(){
         setPosts(filteredPosts);
         setTotalPosts(filteredPosts.length)
     };
+
+    //componentDidMount
+    //componentDidUpdate
+    //componentWillUnmount
+    //dengan useEffect bisa menjalanakan semua ini
+
+    useEffect(() => {
+        console.log('render');
+
+        return() => {//componeneUnmount
+            console.log('unmount');
+        }
+    },[posts]);//componentDidUpdate yang didalem array
+
     return(
         <>
         <h1>Simple blog</h1>
