@@ -20,6 +20,16 @@ function Homepage(){
         .then((json) => setExternalPosts(json));
     },[]);
 
+    useEffect(() => {
+        console.log('ada post baru');
+        
+    },[posts]);
+
+    useEffect(() => {
+        console.log('render');
+        
+    })
+
     return(
         <>
         <h1>Simple blog</h1>
